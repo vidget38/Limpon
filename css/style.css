@@ -12,7 +12,11 @@ a {
 h1{
     font-size: 80px;
     font-weight: 600;
+    letter-spacing: -2.5px;
+    line-height: 1.1;
     color: #192b59;
+    max-width: 540px;
+    margin-bottom: 65px;
 }
 
 /* page-header */
@@ -20,11 +24,19 @@ h1{
 .nav {
     font-size: 12px;
     font-weight: 700;
-    color: #6e7ea9;
     text-transform: uppercase;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+}
+
+.nav>li {
+    padding: 0px 15px;
+}
+
+.nav-item {
+    color: #6e7ea9;
 }
 
 /* Button */
@@ -135,4 +147,26 @@ h1{
     color:#1085e4;
     text-transform: uppercase;
     display: block;
+}
+
+.list-stat {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-stat>li {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.7px;
+    color: #1085e4;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.list-stat>li>span {
+    display: block;
+    font-size: 50px;
+    letter-spacing: 0;
+    color: #bacbdc;
+    margin-bottom: 23px;
 }
