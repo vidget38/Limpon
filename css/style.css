@@ -74,6 +74,10 @@ h1{
     font-size: 14px;
 }
 
+.content-app .title-h2 {
+    margin-bottom: 36px;
+}
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -135,6 +139,7 @@ h1{
     border: 1px solid #1085e4;
     padding: 20px 41px;
     border-radius: 30px;
+    transition: .3s;
 }
 
 .btn-primary:hover {
@@ -152,6 +157,7 @@ h1{
     border: 1px solid #cbdbe8;
     padding: 20px 41px;
     border-radius: 30px;
+    transition: .3s;
 }
 
 .btn-secondary:hover {
@@ -175,6 +181,7 @@ h1{
     border: 1px solid #dce1e5;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: .3s;
 }
 
 .btn-info:hover {
@@ -254,6 +261,8 @@ h1{
                         "d f g"
                         "e f g"
                         "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1110px;
     margin: 0 auto;
 }
@@ -290,10 +299,22 @@ h1{
     grid-area: h;
 }
 
+.grid-name {
+    font-size: 14px;
+    color: #1085e4;
+}
+
+.grid-name span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #192b59
+}
+
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
     color: #192b59;
+    margin-top: 0;
 }
 
 .grid h2 span {
@@ -304,7 +325,9 @@ h1{
 
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 5px #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 9 20px #f4f4f4;
+    padding: 40px 29px 64px;
 }
 
 .grid-item h3 {
@@ -323,39 +346,86 @@ h1{
 .grid-icon {
     background-repeat: no-repeat;
     display: block;
-    margin: 0 auto 36px;
+    height: 92px;
+    margin: 0 auto 21px;
+    background-position: center;
 }
 
 .grid-icon-1 {
     background-image: url(../img/paper.png);
-    width: 89px;
-    height: 85px;
-}
+    background-size: 73px 79px;
+ }
 .grid-icon-2 {
     background-image: url(../img/tools.png);
-    width: 73px;
-    height: 79px;
+    background-size: 89px 85px;
 }
 .grid-icon-3 {
     background-image: url(../img/handtel.png);
-    width: 79px;
-    height: 82px;
+    background-size: 79px 82px;
 }
 .grid-icon-4 {
     background-image: url(../img/gear.png);
-    width: 103px;
-    height: 92px;
+    background-size: 109px 92px;
 }
 .grid-icon-5 {
     background-image: url(../img/comp.png);
-    width: 85px;
-    height: 90px;
-}
+    background-size: 85px 90px;
+ }
 .grid-icon-6 {
     background-image: url(../img/headphone.png);
-    width: 100px;
-    height: 87px;
+    background-size: 100px 87px;
 }
+
+.settings-icon {
+    display: block;
+    background-image: url(../img/software-icon.png);
+    background-repeat: no-repeat;
+    background-position: -28px 0;
+    width: 117px;
+    height: 98px;
+}
+
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-software-flex>div {
+    flex-basis: 55%;
+}
+
+.page-software .title-h2, .page-analytics .title-h2{
+    max-width: 766px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.page-software-list {
+    margin-top: 30px;
+    height: 323px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.page-software-list::-webkit-scrollbar {width: 4x; height: 4px;}
+.page-software-list::-webkit-scrollbar-button {background-color: #1085e4;}
+.page-software-list::-webkit-scrollbar-track-piece {background-color: #f3f6ff;}
+.page-software-list::-webkit-scrollbar-thumb {height: 50px; background-color: #1085e4; border-radius: 10px;}
+
+.page-software-list dt {
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 9px;
+}
+
+.page-software-list dd {
+    margin-left: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.75;
+    padding-right: 20px;
+}
+
 
 /* page-subscribe */
 
@@ -386,6 +456,26 @@ h1{
 
 .page-subscribe p {
     color: #fff;    
+}
+
+/* page-software */
+
+.page-software {
+    padding: 109px 0 156px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-software-pic {
+    display: block;
+    width: 931px;
+    height: 760px;
+    background-image: url(../img/software-stat.png);
+    background-size: 100% 100%;
+    background-position: 0 0;
+    position: absolute;
+    left: -20px;
+    bottom: -44px;
 }
 
 /* page-stat */
@@ -568,3 +658,81 @@ h1{
 .box-subscribe-user input:-moz-placeholder           {color: #b1c3ee;}
 .box-subscribe-user input:-ms-input-placeholder      {color: #b1c3ee;}
 
+/* page-app */
+
+.page-app {
+    padding: 69px 0 82px 0;
+}
+
+.page-app .wrap {
+    position: relative;
+}
+
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c4d2dd;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: 7px;
+}
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 185px;
+    height: 77px;
+}
+
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+}
+
+.page-app-list>li>a.page-app-ios {
+    background-position: -191px 0;
+}
+
+.content-app {
+    width: 55%;
+}
+
+a.video-app {
+    position: absolute;
+    top: -61px;
+    right: -172px;
+}
+
+/* page-analytics */
+
+.page-analytics {
+    background-image: url(../img/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px 0;
+}
+
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-analytics-text {
+    margin-bottom: 54px;
+}
+
+.flex-analytics>div {
+    flex-basis: 53px;
+}
