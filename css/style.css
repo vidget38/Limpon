@@ -717,7 +717,15 @@ a.video-app {
 /* page-analytics */
 
 .page-analytics {
-    background-image: url(../img/);
+    background-image: url(../img/control.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px 0;
+}
+
+.page-control {
+    background-image: url();
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 117px 0 137px 0;
@@ -735,4 +743,30 @@ a.video-app {
 
 .flex-analytics>div {
     flex-basis: 53px;
+}
+/* page-clients */
+
+.page-clients {
+    background-image: url(../img/vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.page-clients {
+    color: #fff;
+}
+
+.page-clients .title-40 span {
+    color: #85c8ff;
+}
+
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-clients-item {
+    background-color: #fff;
 }
