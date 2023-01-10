@@ -589,6 +589,14 @@ h1{
     background-color: #192b59;
 }
 
+.box-price-item.active>h3 {
+    color: #fff;
+}
+
+.box-price-item.active p {
+    color: #fff;
+}
+
 .box-price-item.active h3 span:first-child {
     color: #fff;
 }
@@ -596,7 +604,7 @@ h1{
 .box-price-item ul {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 37px;
+    margin-top: 36px;
     margin-bottom: 63px;
     font-size: 14px;
 }
@@ -794,6 +802,7 @@ a.video-app {
     flex-basis: 31.5%;
     box-sizing: border-box;
     font-size: 14px;
+    box-shadow: 0 5px 6px #f4f4f4;
 }
 
 .box-clients-item .name {
@@ -811,7 +820,7 @@ a.video-app {
     color: #1085e4;
     margin-bottom: 0;
     letter-spacing: 3px;
-    box-shadow: 0 5px 6px #f4f4f4;
+    
 }
 
 .box-clients-item>p {
@@ -872,7 +881,7 @@ a.video-app {
 
 .box-team-item .avatar {
     position: absolute;
-    top: -86;
+    top: -86px;
     left: 0;
     right: 0;
     margin: 0 auto;
