@@ -517,6 +517,7 @@ h1{
 
 .page-stat {
     padding: 116px 0px 96px 0px;
+    position: relative;
 }
 
 .page-plan, .page-screen {
@@ -684,6 +685,20 @@ h1{
     position: relative;
 }
 
+.intro {
+    color: rgba(0,0,0,0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+
+}
+
 .page-app-text {
     font-size: 16px;
     font-weight: 700;
@@ -844,7 +859,7 @@ a.video-app {
     background-image: url(../img/bg-team.png);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 82px 0 20px 0;
+    padding: 82px 0 121px 0;
 }
 
 .box-team {
@@ -974,4 +989,139 @@ a.video-app {
 
 .box-team-item .btn-web:hover span {
     background-position: -108px -35px;
+}
+
+.object-circle {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -363px;;
+    background-image: url(../img/circle-gray.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 472px;
+    height: 765px;
+}
+
+.object-rhombus {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -198px;;
+    background-image: url(../img/rhombus-gray.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 569px;
+    height: 661px;
+}
+
+/* page-form */
+
+.page-form {
+    background-image: url(../img/bg-form.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0 121px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 51px;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 14px;
+    border: 2px solid #dce4ec;
+    padding: 25px 80px 25px 37px;
+    border-radius: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 161px;
+    resize: none;
+}
+
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {color: #8995b3;}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder                   {color: #8995b3;}
+.contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder                     {color: #8995b3;}
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder           {color: #8995b3;}
+
+.contact-form .btn-primary {
+    position: relative;
+    padding: 22px 40px 22px 65px;
+    max-width: 232px;
+    letter-spacing: 2px;
+}
+
+.contact-form .btn-primary::before {
+    content: '';
+    background-image: url(../img/btn-plane.png);
+    display: block;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 54px;
+    top: calc(50% - 6px);
+}
+
+.contact-form-item {
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.contact-form-text {
+    margin-bottom: 34px;
+}
+
+.contact-form-item::after {
+    content: '';
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    right: 42px;
+}
+
+.contact-form-name::after {
+    background-image: url(../img/icon-name.png);
+    width: 13px;
+    height: 15px;
+    top: calc(50% - 7px);
+}
+
+.contact-form-mail::after {
+    background-image: url(../img/icon-mail.png);
+    width: 14px;
+    height: 11px;
+    top: calc(50% - 7px);
+}
+
+.contact-form-text::after {
+    background-image: url(../img/icon-text.png);
+    width: 14px;
+    height: 15px;
+    top: calc(50% - 7px);
+}
+
+.flex-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.flex-form>div {
+    flex-basis: 47%;
+}
+
+.flex-form img {
+    margin-right: 60px;
 }
