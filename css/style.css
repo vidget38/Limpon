@@ -563,16 +563,18 @@ ul.nav-modal>li:last-child {
     overflow: hidden;
 }
 
-.page-software-pic {
+.software-pic {
     display: block;
-    width: 931px;
-    height: 760px;
+    width: 48%;
+    height: 986px;
     background-image: url(../img/software-stat.png);
-    background-size: 100% 100%;
-    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     position: absolute;
-    left: -20px;
-    bottom: -44px;
+    left: -2%;
+    bottom: -39px;
+    z-index: -1;
 }
 
 /* page-stat */
@@ -588,6 +590,8 @@ ul.nav-modal>li:last-child {
     justify-content: space-around;
     list-style-type: none;
     margin-top: 76px;
+    padding: 0;
+    flex-wrap: wrap;
 
 }
 
@@ -640,6 +644,7 @@ ul.nav-modal>li:last-child {
     display: flex;
     justify-content: space-between;
     margin-top: 83px;
+    flex-wrap: wrap;
 }
 
 .box-price .btn-primary {
@@ -1216,6 +1221,8 @@ a.video-app {
     align-items: center;
     max-width: 1090px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .flex-form>div {
@@ -1293,13 +1300,45 @@ a.video-app {
         height: 579px;
         top: 258px;
     }
+    /*
+    .page-app {
+        padding: 380px 0 82px 0;
+    }
     .video-app {
         position: absolute;
-        top: -23px;
+        top: -359px;
         right: 0;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
     }
     .video-app img {
-        width: 482px;
+        width: 337px;
+        margin-left: 50px;
+    }
+    */
+}
+
+@media (max-width: 1300px) {
+    .software-pic {
+        display: none;
+    
+    }
+    .page-software {
+        padding: 60px 0;
+    }
+    .page-software-flex {
+        justify-content: center;
+    }
+    .page-software-flex>div {
+        -ms-flex-preferred-size: 55%;
+        flex-basis: 100%;
+    }
+    .page-software-list {
+        height: 266px;
+        max-width: 800px;
+        margin-right: 50px;
     }
 }
 
@@ -1325,9 +1364,10 @@ a.video-app {
     .page-header {
         padding: 53px 0 150px 0;
     }
-}
-
-@media (max-width: 1050px) {
+    .content-app {
+        width: 100%;
+        text-align: center;
+    }
     .list-company-item {
         flex-basis: 50%;
         margin-bottom: 50px;
@@ -1367,6 +1407,43 @@ a.video-app {
     }
     .page-subscribe {
         padding: 50px 0 65px 0;
+    }
+    .page-app {
+        padding: 380px 0 82px 0;
+    }
+    .video-app {
+        position: absolute;
+        top: -359px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .video-app img {
+        width: 337px;
+        margin-left: 50px;
+    }
+ }
+
+ @media (max-width: 930px) {
+    .intro {
+        display: none;
+    }
+    .box-price {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .box-price-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+ }
+
+ @media (max-width: 700px) {
+    .list-stat>li {
+        flex-basis: 34%;
+        margin-bottom: 30px;
     }
  }
 
